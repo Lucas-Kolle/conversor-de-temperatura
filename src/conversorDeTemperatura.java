@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class conversorDeTemperatura {
 
+    // adicionando variaveis para coletar os dados
     double temperaturaEmCelsius;
     double temperaturaConvertidaEmFahrenheit;
     double temperaturaConvertidaEmKelvin;
@@ -13,22 +14,23 @@ public class conversorDeTemperatura {
         System.out.print("Digite a Temperatura em Celsius (Cº):");
         temperaturaEmCelsius = leitor.nextDouble();
 
-        calculoDeconversao();
+        calcularConversao();
     }
 
-    public void calculoDeconversao() {
+    public void calcularConversao() {
         temperaturaConvertidaEmKelvin = temperaturaEmCelsius + 273.15;
         temperaturaConvertidaEmFahrenheit = (temperaturaEmCelsius * 1.8) + 32.0;
 
+        // println = vai pra linha de baixo / print = fica na mesma linha
         System.out.println("CALCULANDO RESULTADO...");
-        System.out.println("");
 
-        exibirTemperaturasConvertidas();
+        exibirTemperaturas();
 
     }
 
-    public void exibirTemperaturasConvertidas(){
+    public void exibirTemperaturas(){
 
+        //exibir o resultado com 2 casas após a virgula
         String temperaturaConvertidaEmFahrenheitComDoisDecimais = String.format("%.2f", temperaturaConvertidaEmFahrenheit);
         String temperaturaConvertidaEmKelvinComDoisDecimais = String.format("%.2f", temperaturaConvertidaEmKelvin);
 
