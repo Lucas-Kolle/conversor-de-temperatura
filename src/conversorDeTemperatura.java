@@ -36,8 +36,8 @@ public class conversorDeTemperatura {
 
         System.out.println("****************************");
         System.out.println(temperaturaEmCelsius + "Cº Equivalem a:");
-        System.out.println(temperaturaConvertidaEmFahrenheitComDoisDecimais + " (FAHRENHEIT)");
-        System.out.println(temperaturaConvertidaEmKelvinComDoisDecimais + " (KELVIN)");
+        System.out.println(temperaturaConvertidaEmFahrenheitComDoisDecimais + "°F (FAHRENHEIT)");
+        System.out.println(temperaturaConvertidaEmKelvinComDoisDecimais + "K (KELVIN)");
         System.out.println("****************************");
     }
 }
